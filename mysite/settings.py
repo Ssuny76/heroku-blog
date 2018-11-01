@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
+import dj_database_url
 
 import os
 
@@ -78,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'djangogirls',
-        'USER': 'name',
+        'USER': 'dayoungseo',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
