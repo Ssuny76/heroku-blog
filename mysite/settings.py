@@ -25,6 +25,7 @@ SECRET_KEY = '38l&!b^vx_je++c764uu#nx1&e@)b4s3(k9dbze&#+0mncovm6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
@@ -126,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, './blog/static')
 
 LOGIN_REDIRECT_URL = '/'
 
